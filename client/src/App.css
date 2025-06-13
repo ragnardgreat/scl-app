@@ -1,0 +1,612 @@
+body {
+    padding: 0px;
+    font-family: Roboto;
+    margin: 0px;
+    width: 100%;
+    align-items: center;
+    background-color: black;
+    color: white;
+    animation: 1.5s pageLoad ease forwards ;
+}
+
+@keyframes pageLoad{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+/*Logos*/
+
+/*---------*/
+
+/*Login and Register*/
+
+#loginForm {
+    font-size: 25px;
+    margin-top: 5%;
+    width: 20%;
+    border: 3px solid pink;
+    border-radius: 20px;
+}
+
+#loginForm input {
+    font-size: 30px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+#input[type="text"],
+textarea {
+    background-color: black;
+}
+
+#registerContainer {
+    font-size: 25px;
+    margin-top: 5%;
+    width: 20%;
+}
+
+#registerContainer input {
+    font-size: 30px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+#regStyle {
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 30px;
+}
+
+#regStyle:hover {
+    color: pink;
+    font-size: 32px;
+}
+
+/*-----------------*/
+
+
+/*Navbar Style*/
+
+#home {
+    font-size: 20px;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+}
+
+#home h1 {
+    margin-top: 0px;
+}
+
+.navBtn:hover {
+    color: white;
+    margin-left: 20px;
+}
+
+.pageStyle {
+    color: white;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#pageTxt {
+    margin: 0px;
+    padding: 20px 0px 30px 0px
+}
+
+
+#outerContainer {
+    opacity: 0;
+    transition: 1s ease opacity, 1s ease transform;
+    position: fixed;
+    width: 20%;
+    border-right: 2px solid white;
+    z-index: 1;
+}
+
+#outerContainer:hover{
+    animation: 1s navbarIn ease forwards;
+}
+
+#outerContainer:not(hover){
+    transition: 1s ease opacity, 1s ease transform;
+    animation: 1s navbarOut ease forwards;
+}
+
+@keyframes navbarIn{
+    0%{
+        opacity: 0%;
+        left: -10%;
+    }
+    100%{
+        opacity:100%;
+        left: 0%;
+    }
+}
+
+@keyframes navbarOut{
+    0%{
+        opacity:100%;
+        left: 0%;
+    }
+    100%{
+        opacity:0%;
+        left: -10%;
+    }
+
+}
+
+
+
+#searchbar {
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    left: -200%;
+    width: 100%;
+    height: 50%;
+    border: 2px solid white;
+    border-radius: 0px 10px 10px 0px;
+    transition: .6s;
+}
+
+#searchbar::after {
+    z-index: -1;
+}
+
+#search input {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+
+/*-----------------*/
+
+/*misc.*/
+#clicked {
+    color: pink;
+}
+
+#logoTextContainer {
+    display: flex;
+    float: left;
+    margin: 10% 30% 20% 35%
+}
+
+#logoContainer {
+    width: 120px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    animation-name: anim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#newLogo {
+    background-color: pink;
+    border-radius: 50%;
+    font-size: 100px;
+    color: black;
+    font-weight: bold;
+}
+
+#textContainer {
+    z-index: -1;
+    font-size: 100px;
+    margin-left: -150px;
+    opacity: 0;
+    animation-name: textAnim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#newLogoText {
+    font-weight: bold;
+}
+
+#outerContainer:hover #textContainer {
+    visibility: hidden;
+    display: none;
+}
+
+#outerContainer:not(hover) #textContainer {
+    visibility: hidden;
+    display: none;
+}
+
+#outerContainer:hover #logoContainer {
+    transform: rotate(-45deg);
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-name: spinIn;
+}
+
+#outerContainer:not(hover) #logoContainer {
+    transform: rotate(-45deg);
+    animation-play-state: running;
+    animation-name: spinOut;
+
+}
+
+@keyframes spinIn {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes spinOut {
+    0% {
+        transform: rotate(-405deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes textAnim {
+    0% {
+        margin-left: -145px;
+        opacity: 0%;
+    }
+
+    50% {
+        margin-left: -60px;
+        opacity: 100%;
+    }
+
+    70% {
+        margin-left: -60px;
+        opacity: 100%;
+    }
+
+
+    100% {
+        margin-left: -145px;
+        opacity: 0%;
+    }
+
+}
+
+
+@keyframes anim {
+    0% {
+        transform: rotate(-45deg);
+        margin-left: -20%
+    }
+
+    50% {
+        transform: rotate(360deg);
+        margin-left: -30%
+    }
+
+    70% {
+        transform: rotate(360deg);
+        margin-left: -30%
+    }
+
+    100% {
+        transform: rotate(-45deg);
+        margin-left: -10%
+    }
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+    margin-top: 40px;
+    font-size: 30px;
+    transition: .2s;
+}
+
+button:hover {
+    color: black;
+    background-color: pink;
+    transition: .2s;
+}
+
+/*------*/
+
+/*Posts style*/
+#container {
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    border-radius: 20px;
+    transition: .4s;
+    z-index: inherit;
+    transition: .5s ease;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#container::before {
+    --angle: 0deg;
+    border-radius: 20px;
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    transform: -50% -50%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, rgb(250, 167, 181), black);
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    margin: -5px;
+    left: 0;
+    z-index: -1;
+    animation: 5s bgSpin linear infinite;
+}
+
+#container:hover::before {
+    transition: .5s ease;
+}
+
+@keyframes bgSpin {
+    from {
+        --angle: 0deg
+    }
+
+    to {
+        --angle: 360deg
+    }
+
+}
+
+#container h1 {
+    padding: 10px
+}
+
+#container h2 {
+    margin-left: 20px;
+    border-bottom: 2px solid rgb(92, 92, 92);
+}
+
+#container img {
+    margin: 10px 0px 0px 10px;
+    border-bottom: 2px solid rgb(92, 92, 92);
+    border-radius: 50%;
+}
+
+#nameAndContent {
+    display: flex;
+}
+
+#userPosts {
+    width: 100%;
+    float: left;
+    margin: auto;
+    font-weight: bold;
+}
+
+#postEditButtons {
+    margin-top: -100px;
+    margin-bottom: 40px;
+    padding-right: 20px;
+    display: flex;
+    float: right;
+}
+
+#postEditButtons button {
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10%;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+#createPost {
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    left: 0
+}
+
+
+
+#postTitle {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#editPostsContainer {
+    margin-top: 20px;
+    padding: 5px;
+    position: relative;
+    background-color: rgb(56, 56, 56);
+}
+
+@property --angle2 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes userBg {
+    from {
+        --angle: 0deg
+    }
+
+    to {
+        --angle: 360deg
+    }
+
+}
+
+#editPostsContainer::after {
+    --angle2: 0deg;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), rgb(250, 167, 181), white, rgb(250, 167, 181));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    animation: 3s userBg linear infinite;
+    transition: .5s ease;
+}
+
+
+#delete {
+    opacity: 0%;
+    background-color: red;
+}
+
+#update {
+    opacity: 0;
+    background-color: rgb(0, 133, 241);
+}
+
+#delete:hover {
+    background-color: rgba(129, 5, 5, 0.815);
+}
+
+#update:hover {
+    background-color: rgb(70, 172, 255);
+}
+
+
+#editPostsContainer:hover::after {
+    padding: 5px;
+}
+
+#editPostsContainer:hover #delete {
+    opacity: 100%;
+}
+
+#editPostsContainer:hover #update {
+    opacity: 100%;
+
+}
+
+
+
+
+
+/*----------*/
+
+/*Profile style */
+#profilePic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#profileButtons {
+    border-bottom: 2px solid white;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+#profileButtons button {
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+    background: none;
+    font-weight: bold;
+    transition: .2s;
+}
+
+#profileButtons button:hover {
+    cursor: pointer;
+    color: pink;
+}
+
+#picContainer {
+    justify-content: center;
+    padding: 20px;
+}
+
+#users button {
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#users button:hover {
+    font-weight: bold;
+    font-size: 35px;
+    border-radius: 15px;
+}
+
+#searchText {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#changeImgBtn {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+#profilePicChange label {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#profilePicChange {
+    border-top: 2px solid white;
+}
+
+#usernamePasswordChange {
+    font-size: 20px;
+}
+
+#userPost:hover{
+    background-color: rgb(129, 129, 129);
+    font-size: 35px;
+    border-radius: 10px;
+}
+
+#userPost{
+    border: 2px solid pink;
+    margin:20px;
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(56, 56, 56);
+    transition: .6s ease
+};
+
+
+/*-----------*/
+/*Edit Posts*/
+#updatePost {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#updatePost input {
+    font-size: 30px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
