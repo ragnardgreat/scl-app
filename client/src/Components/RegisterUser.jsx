@@ -6,6 +6,7 @@ export default function RegisterUser() {
         const border = {
         border: "2px solid pink",
         width: "20%",
+        borderRadius:"20px",
         padding: "10px"
     }
 
