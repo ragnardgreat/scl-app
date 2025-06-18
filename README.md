@@ -18,4 +18,3 @@
 
 # Contact:
 ## LinkedIn: www.linkedin.com/in/roland-piperal-932a4a347
-## Email: roland.piperal123@gmail.com
