@@ -2,8 +2,9 @@
 
 This is my social media application. 
 -
-Frontend is built on JavaScript, React, Html and CSS.
-Backend is built on Node.js, Express, MySQL and react-router
+# How it´s made?
+##Frontend: JavaScript, React, Html and CSS.
+##Backend: Node.js, Express, MySQL and react-router
 -
 (Server on the current build uses localhost, but in theory should function just fine on an external server)
 -
