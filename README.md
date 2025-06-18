@@ -2,11 +2,11 @@
 
 -
 # How it´s made?
-##Frontend: JavaScript, React, Html and CSS.
-##Backend: Node.js, Express, MySQL and react-router
+## Frontend: JavaScript, React, Html and CSS.
+## Backend: Node.js, Express, MySQL and react-router
 (Server on the current build uses localhost, but in theory should function just fine on an external server)
 -
-#Description:
+# Description:
 You upload a post and everyone
 who has this app installed can see it. You can follow people to make ther posts more frequent.
 -
