@@ -11,6 +11,8 @@
 -
 # What I learned?
 
+How to use and work with React better/more efficiently.
+CSS styling
 
 
 
