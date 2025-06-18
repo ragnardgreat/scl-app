@@ -8,7 +8,7 @@
 -
 # Description:
 ## You upload a post and everyone who has this app installed can see it. You can follow people to make ther posts more frequent.
--
+
 # What I learned?
 
 How to use and work with React better/more efficiently.
