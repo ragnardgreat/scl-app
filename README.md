@@ -1,5 +1,4 @@
-# scl-app
-
+![SCL logo](client/public/scl-high-resolution-logo-transparent.png)
 # How it´s made?
 ## Frontend: JavaScript, React, Html and CSS.
 ## Backend: Node.js, Express, MySQL and react-router
