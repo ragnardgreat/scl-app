@@ -10,11 +10,17 @@
 # Description:
 ## You upload a post and everyone who has this app installed can see it. You can follow people to make ther posts more frequent. This is a very experimental social media idea, I have no frame of reference that how much people will actually like this
 
+# SCL. demonstration video:
+
+https://github.com/user-attachments/assets/683b83cd-b211-49ab-a8bf-b015329f3cc3
+
+
 # What I learned?
 
-## How to use and work with React better/more efficiently. CSS styling. How to use Node.js as backend
+## How to use and work with React better/more efficiently. CSS styling. How to use Node.js as backend. Design and building principles
 # Future Updates:
 ## Reposts and likes will be my next update/feature
 
 # Contact:
 ## LinkedIn: www.linkedin.com/in/roland-piperal-932a4a347
+
